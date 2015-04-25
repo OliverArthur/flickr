@@ -1,0 +1,23 @@
+<!-- Main content thumbnail -->
+<section class="content-thumbnail">
+
+  <!-- row content-inner-thumbnail -->
+  <div class="content-inner-thumbnail">
+
+    <div class="item-thumbnail" data-ng-repeat="item in photos.items | filter:query | orderBy: 'date'">
+      <!-- thumbnail thumbnail-item  -->
+      <div class="thumbnail-item">
+        <img data-ng-src="{{item.media.m}}" data-ng-alt="{{item.title}}" data-ng-title="{{item.title}}"/>
+        <div class="caption">
+          <span class="left" >{{item.published | date: 'MMMM d, y'}}</span>
+          <data-fl-favourites></data-fl-favourites>
+        </div>
+      </div>
+      <!-- /.thumbnail thumbnail-item  -->
+    </div>
+
+  </div>
+  <!-- /.row content-inner-thumbnail -->
+
+</section>
+<!-- /.Main content thumbnail -->
